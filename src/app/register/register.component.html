@@ -1,0 +1,33 @@
+
+<mat-card class="example-card" >
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+<div >
+<h2 >Register</h2><hr><br>
+<h3>
+  <form [formGroup]="regForm" action=""> 
+      Enter Email : <input type="email" formControlName="email" placeholder="ex.abc1@gmail.com"/>
+      <div [hidden]="regForm.valid || regForm.pristine" *ngIf="regForm.controls['email'].hasError('required')">
+        Email Field Cannot Be Empty</div>
+     <br><br> 
+      Enter Password : <input type="password" formControlName="password"  placeholder="ex.abc@123"/>
+      <div  [hidden]="regForm.valid || regForm.pristine" *ngIf="regForm.controls['password'].hasError('required')">
+        password Cannot Be Empty</div>
+       <div  [hidden]="regForm.valid || regForm.pristine" *ngIf="regForm.controls['password'].hasError('minlength')">
+        Minimum password length is i.e 3</div>
+       <div  [hidden]="regForm.valid || regForm.pristine" *ngIf="regForm.controls['password'].hasError('maxlength')">
+        Maximum password length is i.e 10</div>
+        <br><br>
+
+      Confirm password  : <input type="password"  formControlName="confirmpass"   placeholder="ex.abc@123"/>
+     
+      
+      <br><br>
+      <input type="submit" value="REGISTER" (click)="stored()"  [disabled]="regForm.invalid || !(regForm.value.password==regForm.value.confirmpass)"/>
+      <br><br><mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  
+  </form>
+</h3>
+</div>
+</mat-card-content>
+</mat-card>

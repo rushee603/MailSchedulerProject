@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row >
+   <button mat-icon-button color="accent" (click)="sidenav.toggle()" >
+      <mat-icon style="color:white;" aria-label="sidenav.toggle();">menu</mat-icon>
+    </button>
+    <br>
+    <span >Mail Shceduler</span> 
+    
+    <button mat-icon-button style="  margin-left: 1000px;" routerLink="login"  routerLinkActive="Active">
+      <mat-icon>open_in_new</mat-icon> logout
+     </button>
+   
+  </mat-toolbar-row>
+</mat-toolbar>
+
+ <mat-sidenav-container > 
+  <mat-sidenav #sidenav opened="false" [mode]="(isHandset$ | async) ? 'over' : 'side'" 
+  style="  background-color: rgba(33, 216, 185, 0.521);">
+    <mat-nav-list style="width:150px; " >
+        <br><br>
+      <button mat-button color="warn" routerLink="login"  routerLinkActive="Active" style="color: white;" >
+      Login
+      </button>
+      <br><br>
+      <button mat-button color="warn" routerLink="registation"  routerLinkActive="Active" style="color: white;">
+       Registation 
+      </button>    
+    </mat-nav-list>   
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <br>
+   <div style="height: 100%; background-color :rgba(0, 0, 0, 0.849);">
+    <router-outlet></router-outlet>
+    <!-- <app-dashcomp></app-dashcomp>  -->
+    </div> 
+  </mat-sidenav-content> 
+</mat-sidenav-container> 
+
+
+  
+ 

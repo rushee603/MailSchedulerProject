@@ -1,0 +1,71 @@
+{
+  "accDeatail": [
+    {
+      "accountname": "office",
+      "email": "karan09@gmail.com",
+      "password": "12345678",
+      "server": "3000",
+      "serverport": "3000",
+      "outserver": "8080",
+      "outserverport": "8080",
+      "id": 1
+    },
+    {
+      "accountname": "Personal",
+      "email": "rsmule@gmail.com",
+      "password": "2424",
+      "server": "1234",
+      "serverport": "1111",
+      "outserver": "1234",
+      "outserverport": "0007",
+      "id": 2
+    }
+  ],
+  "mailinfo": [
+    {
+      "to": "amit58@gmail.com",
+      "cc": "rushi88@gmail.com",
+      "bcc": "aa",
+      "Subject": "Today's Meeting",
+      "date": "2022-08-12",
+      "time": "14:46",
+      "id": 1
+    },
+    {
+      "to": "amit58@gmail.com",
+      "cc": "rushi88@gmail.com",
+      "bcc": "aa",
+      "Subject": "birthday inviation ",
+      "date": "2022-08-12",
+      "time": "23:34",
+      "id": 2
+    },
+    {
+      "to": "karan3@gmail.com",
+      "cc": "rushi88@gmail.com",
+      "bcc": "aa",
+      "Subject": "Offer Latter",
+      "date": "2022-08-12",
+      "time": "11:38",
+      "id": 3
+    },
+    {
+      "to": "amit58@gmail.com",
+      "cc": "ajay@gmail.com",
+      "bcc": "Imp Documents",
+      "Subject": "Imp Documents",
+      "date": "2022-09-01",
+      "time": "01:51",
+      "id": 4
+    },
+    {
+      "to": "amit58@gmail.com",
+      "cc": "rushi88@gmail.com",
+      "bcc": "aa",
+      "Subject": "anguler",
+      "date": "2022-08-18",
+      "time": "18:53",
+      "id": 5
+    }
+  ]
+}

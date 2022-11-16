@@ -1,0 +1,30 @@
+
+<mat-card class="example-card" >
+<mat-card-title></mat-card-title>
+<mat-card-content>
+  <div >
+    <h2>LOGIN Form</h2><hr><br>
+    <h3>
+        <form [formGroup]="loginform" action="">
+              Enter Email : <input type="text" formControlName="email" placeholder="ex. abc1@gmail.com">
+              <div  [hidden]="loginform.valid || loginform.pristine" *ngIf="loginform.controls['email'].hasError('required')">
+              Email Cannot Be Empty</div><br>
+              <div  [hidden]="loginform.valid || loginform.pristine" *ngIf="loginform.controls['email'].hasError('maxlength')">
+              Maximum Email length is i.e 20</div><br>
+              Enter password : <input type="password" formControlName="password" placeholder="ex. abc@123"> 
+              <div  [hidden]="loginform.valid || loginform.pristine" *ngIf="loginform.controls['password'].hasError('required')">
+              password Cannot Be Empty</div>
+              
+             <div  [hidden]="loginform.valid || loginform.pristine" *ngIf="loginform.controls['password'].hasError('minlength')">
+              Minimum password length is i.e 6</div>
+             <div  [hidden]="loginform.valid || loginform.pristine" *ngIf="loginform.controls['password'].hasError('maxlength')">
+              Maximum password length is i.e 10</div>
+           <br><br>
+          <input type="button" value="LOGIN"(click)="login()" [disabled]="loginform.invalid" />
+        </form><br> <button mat-flat-button routerLink="registation"  routerLinkActive="Active" style="margin-left: 230px;">Registration</button>  
+        <br><br><mat-progress-bar mode="indeterminate"></mat-progress-bar><hr></h3>
+         </div> 
+        </mat-card-content>
+        </mat-card>
+
+<!-- &nbsp; &nbsp; &nbsp; --> 

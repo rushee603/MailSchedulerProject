@@ -1,0 +1,25 @@
+<form  [formGroup] ="addform" action="">
+    <mat-form-field style="width: 100%" appearance="fill">
+        <mat-label>Account Name</mat-label>
+        <input matInput formControlName="accountname"></mat-form-field><br>
+      <h1> Credentials </h1><br>
+      <mat-form-field  style="width: 100%" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email"></mat-form-field><br>
+      <mat-form-field style="width: 100%" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password"></mat-form-field><br>
+      <h1>Incoming Server Details</h1><br>
+      <mat-form-field  appearance="fill"><mat-label>Incoming Server</mat-label>
+        <input matInput formControlName="server"></mat-form-field>&nbsp; &nbsp; 
+      <mat-form-field appearance="fill"><mat-label>Incoming Server Port</mat-label>
+        <input matInput formControlName="serverport"></mat-form-field><h1>Outgoing  Server  Details</h1><br>
+      <mat-form-field  appearance="fill"><mat-label>Outgoing Server</mat-label>
+        <input matInput formControlName="outserver"></mat-form-field>&nbsp; &nbsp;
+      <mat-form-field  appearance="fill"><mat-label>Outgoing Server Port</mat-label>
+        <input matInput formControlName="outserverport">
+      </mat-form-field><br>
+      
+       <button mat-stroked-button (click)="save()"[disabled]="addform.invalid" >Save</button>&nbsp; &nbsp; 
+      <button mat-stroked-button  >Delete</button> <br><br><mat-progress-bar mode="buffer" style="background-color:rgb(7, 7, 7);"></mat-progress-bar>
+</form>

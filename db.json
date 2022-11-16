@@ -1,0 +1,44 @@
+{
+  "Register": [
+    {
+      "name": "rushii",
+      "email": "rushi22@gmail.com",
+      "password": "rush33",
+      "id": 1
+    },
+    {
+      "name": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "ajay@123",
+      "id": 2
+    },
+    {
+      "name": "jay",
+      "email": "jay@gmail.com",
+      "password": "jay222",
+      "id": 3
+    }
+  ],
+  "login": [
+    {
+      "email": "",
+      "password": "rushee34",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "jiay99",
+      "id": 2
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 4
+    }
+  ]
+}

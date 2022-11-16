@@ -1,0 +1,61 @@
+{
+  "mail-configurations": [
+    {
+      "id": 1,
+      "accountName": "Office Account",
+      "email": "john@gmail.com",
+      "password": "123123",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 465
+    },
+    {
+      "id": 2,
+      "accountName": "Personal Account",
+      "email": "john@yahoo.com",
+      "password": "98769876",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 460
+    },
+    {
+      "id": 3,
+      "accountName": "Office Account",
+      "email": "john@gmail.com",
+      "password": "1234",
+      "incomingServer": "imap",
+      "incomingServerPort": 991,
+      "outgoingServer": "smtp",
+      "outgoingServerPort": 465
+    }
+  ],
+  "emails": [
+    {
+      "to": "mary@gmail.com",
+      "cc": "roger.jones@yahoo.com",
+      "bcc": "",
+      "subject": "Project Discussion - Video Conferencing",
+      "body": "Understanding Customer Requirements\nCreate Day-wise schedule",
+      "scheduledDate": "2021-07-11T18:30:00.000Z",
+      "scheduledTime": "00:00",
+      "scheduledDateTime": 1626028200000,
+      "mailConfigurationId": 1,
+      "id": 1
+    },
+    {
+      "to": "smith@gmail.com",
+      "cc": "mary.jones@gmail.com",
+      "bcc": "",
+      "subject": "Project Discussion",
+      "body": "Discussion on finalizing Mini Project",
+      "scheduledDate": "2021-07-12T18:30:00.000Z",
+      "scheduledTime": "00:00",
+      "scheduledDateTime": 1626114600000,
+      "mailConfigurationId": 3,
+      "id": 2
+    }
+  ]
+}
+

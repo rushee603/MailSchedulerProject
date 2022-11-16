@@ -1,0 +1,74 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: hsl(320, 62%, 46%);
+}
+
+.more-button {
+  position: absolute;
+ 
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  position: relative;
+  height: fit-content;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+ 
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-card {
+  max-width: 580px;
+}
+
+mat-card {
+  margin-left:700px;
+  /* margin-top: 30px; */
+  background-color: lightgray;
+ max-height: 618px;
+ max-width: fit-content;
+ text-align: fix;
+}
+
+input{
+width: 530px; 
+height:20px;
+
+
+}
+
+mat-form-field{
+width: 500px;
+margin-left: 30px ;
+
+
+}
+
+table{
+
+  margin-left: 15px;
+  margin-top: 05px;
+  background-color:rgba(255, 255, 0, 0.568);
+  border-radius: 2px;
+  
+
+}
+
+
